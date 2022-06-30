@@ -285,7 +285,7 @@
     </main>
 
     <footer class="footer">
-      <div class="container flex">
+      <div class="container footer-container">
         <div class="footer-address">
           <a href="./index.html" class="logo logo-footer">
             <span class="logo-accent">Web</span><span class="logo-alternative">Studio</span>
@@ -304,7 +304,7 @@
         </div>
 
         <div class="footer-socials-container">
-          <h2 class="footer-title">присоединяйтесь</h2>
+          <b class="footer-title">присоединяйтесь</b>
           <ul class="footer-socials flex">
             <li class="socials-item">
               <a href="#" class="footer-socials-link">
@@ -338,6 +338,29 @@
               </a>
             </li>
           </ul>
+        </div>
+
+        <div class="footer-subscribe">
+          <form name="subscribe-form" autocomplete="on">
+            <b class="footer-title">Подпишитесь на рассылку</b>
+            <label class="visually-hidden" for="sub-email">Почта</label>
+            <input
+              type="email"
+              name="sub-email"
+              class="sub-input"
+              placeholder="E-mail"
+              maxlength="30"
+              id="sub-email"
+            />
+            <button type="submit" class="sub-button">
+              <div class="flex">
+                <span class="subbutton-text">Подписаться</span>
+                <svg width="24" height="24" class="sub-icon">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </div>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
