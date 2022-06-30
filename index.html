@@ -397,7 +397,7 @@
         </div>
 
         <div class="footer-socials-container">
-          <h2 class="footer-title">присоединяйтесь</h2>
+          <b class="footer-title">присоединяйтесь</b>
           <ul class="footer-socials flex">
             <li class="socials-item">
               <a href="#" class="footer-socials-link">
@@ -432,6 +432,15 @@
             </li>
           </ul>
         </div>
+
+        <div class="form-container">
+          <form name="subscribe-form" autocomplete="on">
+            <b>Подпишитесь на рассылку</b>
+            <label for="sub-email">Email</label>
+            <input type="email" name="sub-email" id="sub-email" />
+            <button type="submit">Подписаться</button>
+          </form>
+        </div>
       </div>
     </footer>
 
@@ -442,6 +451,40 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+
+        <form name="callback-form">
+          <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
+
+          <label class="form-label">
+            <span class="label-name">Имя</span>
+            <input type="name" name="user_name" class="form-input" />
+          </label>
+
+          <label class="form-label">
+            <span class="label-name">Телефон</span>
+            <input type="tel" name="tel" class="form-input" />
+          </label>
+
+          <label class="form-label">
+            <span class="label-name">Почта</span>
+            <input type="email" name="email" class="form-input" />
+          </label>
+
+          <label class="comment-label">
+            <span class="label-name">Комментарий</span>
+            <textarea name="comment" placeholder="Введите текст" class="comment-input"></textarea>
+          </label>
+
+          <label class="policy-label">
+            <span
+              >Соглашаюсь с рассылкой и принимаю
+              <a href="#" class="policy-link">Условия договора</a>
+            </span>
+            <input type="checkbox" name="policy" id="policy" class="visually-hidden" />
+          </label>
+
+          <button type="submit" class="send-button">Отправить</button>
+        </form>
       </div>
     </div>
 
