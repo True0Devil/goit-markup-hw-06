@@ -783,6 +783,8 @@ text-align: center; */
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* Modal */
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -837,6 +839,13 @@ text-align: center; */
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   color: #000000;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-button:focus,
+.modal-button:hover {
+  color: var(--accent-color);
 }
 
 .icon-close {
@@ -941,6 +950,7 @@ text-align: center; */
 
   display: block;
   margin-bottom: 30px;
+  padding-left: 21px;
   text-align: center;
 
   color: var(--text-color);
@@ -956,9 +966,10 @@ text-align: center; */
 
 .icon-checkbox {
   position: absolute;
-  left: 0;
+  left: 14px;
   top: 50%;
   transform: translateY(-50%);
+
   opacity: 1;
 
   fill: var(--title-color);
@@ -967,7 +978,7 @@ text-align: center; */
 
 .icon-checked {
   position: absolute;
-  left: 0;
+  left: 14px;
   top: 50%;
   transform: translateY(-50%);
   fill: #fff;
