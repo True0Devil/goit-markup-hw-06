@@ -950,6 +950,10 @@ text-align: center; */
   color: #2196f3;
 }
 
+.checkbox:focus ~ .icon-checkbox {
+  fill: var(--accent-color);
+}
+
 .icon-checkbox {
   position: absolute;
   left: 0;
